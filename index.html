@@ -24,7 +24,7 @@
             //creando la función cities
             async function cities() {
                 seleccionado.disabled = false;
-                const primero = await fetch("https://raw.githubusercontent.com/profesorfaco/dno037-2023-2/main/clase-06/ciudades.json");
+                const primero = await fetch("https://raw.githubusercontent.com/gjarryt/DNM_Clase-06/main/ciudades.json");
                 const ciudades = await primero.json();
                 console.log(ciudades);
                 ciudades.forEach((c) => (seleccionado.innerHTML += `<option>${c.name}</option>`));
